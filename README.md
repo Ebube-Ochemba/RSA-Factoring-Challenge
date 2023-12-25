@@ -19,6 +19,10 @@ I learnt about RSA, how HTTPS provide security, Prime Factorization and the sign
 ```sh
 $ factors <file>
 ```
+Output format: `n=p*q`
+	- one factorization per line
+	- `p` and `q` (_might not be prime numbers, but are factors of_ `n`)
+
 - [rsa](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/rsa):
 
 > - [factors.c](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors.c): The source code for [factors](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors).
