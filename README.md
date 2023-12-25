@@ -21,9 +21,11 @@ $ factors <file>
 ```
 > - Output format:
 
-- `n=p*q`
-- one factorization per line
-- `p` and `q` (_might not be prime numbers, but are factors of_ `n`)
+> - `n=p*q`
+
+> - one factorization per line
+
+> - `p` and `q` (_might not be prime numbers, but are factors of_ `n`)
 
 - [rsa](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/rsa):
 
