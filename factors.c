@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	FILE *file;
 	char line[256];
-	int idx, number;
+	long long int idx, number;
 
 	if (argc != 2)
 	{
@@ -30,16 +30,16 @@ int main(int argc, char *argv[])
 
 	while (fgets(line, sizeof(line), file))
 	{
-		number = atoi(line);
+		number = atoll(line);
 
-		for (idx = 2; idx <= sqrt(number); idx++)
+		for (idx = 3; idx <= sqrt(number); idx+= 2)
 		{
 			if (number % idx == 0)
 			{
 				break;
 			}
 		}
-		printf("%d=%d*%d\n", number, idx, number / idx);
+		printf("%lld=%lld*%lld\n", number, number / idx, idx);
 	}
 	fclose(file);
 	return (0);
