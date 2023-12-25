@@ -20,7 +20,7 @@ I learnt about RSA, how HTTPS provide security, Prime Factorization and the sign
 $ factors <file>
 ```
 
-Output format: `n=p*q`
+> - Output format: `n=p*q`
 	- one factorization per line
 	- `p` and `q` (_might not be prime numbers, but are factors of_ `n`)
 
