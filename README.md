@@ -21,5 +21,5 @@ $ factors <file>
 ```
 - [rsa](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/rsa):
 
-> - [factors.c](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors.c): The source code for [factors]().
-> - [tests](): A folder of test files. Provided by Alx.
+> - [factors.c](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors.c): The source code for [factors](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors).
+> - [tests](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/tests): A folder of test files. Provided by Alx.
