@@ -3,7 +3,7 @@
 #include <math.h> /* sqrt */
 
 /**
- * factors - A function that factorize as many numbers as possible into
+ * main - A function that factorize as many numbers as possible into
  *           a product of two smaller numbers.
  * @argc: The argument count.
  * @argv: The argument passed.
@@ -32,14 +32,20 @@ int main(int argc, char *argv[])
 	{
 		number = atoll(line);
 
-		for (idx = 3; idx <= sqrt(number); idx+= 2)
+		if (number % 2 == 0)
+		{
+			printf("%lld=%lld*2\n", number, number / 2);
+			continue;
+		}
+
+		for (idx = 3; idx <= sqrt(number); idx += 2)
 		{
 			if (number % idx == 0)
 			{
+				printf("%lld=%lld*%lld\n", number, number / idx, idx);
 				break;
 			}
 		}
-		printf("%lld=%lld*%lld\n", number, number / idx, idx);
 	}
 	fclose(file);
 	return (0);
