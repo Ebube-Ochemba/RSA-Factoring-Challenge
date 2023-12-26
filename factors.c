@@ -1,6 +1,7 @@
 #include <stdio.h> /* printf & file ops*/
 #include <stdlib.h> /* atoi */
 #include <math.h> /* sqrt */
+#include <stdbool.h> /* true/false */
 
 /**
  * main - A function that factorize as many numbers as possible into
@@ -14,13 +15,13 @@ int main(int argc, char *argv[])
 	FILE *file;
 	char line[256];
 	long long int idx, number;
+	bool factorFound = false;
 
 	if (argc != 2)
 	{
 		printf("Usage: factors <file>\n");
 		return (-1);
 	}
-
 	file = fopen(argv[1], "r");
 	if (file == NULL)
 	{
@@ -37,15 +38,17 @@ int main(int argc, char *argv[])
 			printf("%lld=%lld*2\n", number, number / 2);
 			continue;
 		}
-
-		for (idx = 3; idx <= sqrt(number); idx += 2)
+		for (idx = 3; idx <= sqrtl(number); idx += 2)
 		{
 			if (number % idx == 0)
 			{
 				printf("%lld=%lld*%lld\n", number, number / idx, idx);
+				factorFound = true;
 				break;
 			}
 		}
+		if (!factorFound)
+			printf("%lld=%lld*1\n", number, number);
 	}
 	fclose(file);
 	return (0);
