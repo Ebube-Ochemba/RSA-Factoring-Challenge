@@ -32,6 +32,7 @@ int main(int argc, char *argv[])
 	while (fgets(line, sizeof(line), file))
 	{
 		number = atoll(line);
+		factorFound = false;
 
 		if (number % 2 == 0)
 		{
