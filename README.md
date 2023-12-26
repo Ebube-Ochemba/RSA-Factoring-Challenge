@@ -14,7 +14,7 @@ I learnt about RSA, how HTTPS provide security, Prime Factorization and the sign
 
 > Each file contains the solution to a task in the project.
 
-- [factors](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors): A Python script that factorize as many numbers as possible into a product of two smaller numbers.
+- [factors](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors): A Python script that factorizes as many numbers as possible into a product of two smaller numbers.
 > Usage:
 ```sh
 $ factors <file>
