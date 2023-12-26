@@ -28,7 +28,6 @@ int main(int argc, char *argv[])
 		printf("Unable to open file: %s\n", argv[1]);
 		return (-1);
 	}
-
 	while (fgets(line, sizeof(line), file))
 	{
 		number = atoll(line);
