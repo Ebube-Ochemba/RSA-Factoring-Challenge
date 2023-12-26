@@ -1,0 +1,50 @@
+#!/usr/bin/python3
+
+"""
+factors
+Factorize as many numbers as possible
+"""
+
+import sys
+import math
+
+def factorize(num):
+    """Factorize a number into a product of two smaller numbers."""
+    factorFound = False
+    if num % 2 == 0:
+        return num // 2, 2
+
+    for idx in range(3, int(math.sqrt(num)) + 1, 2):
+        if num % idx == 0:
+            factorFound = True
+            return num // idx, idx
+
+    if not factorFound:
+        return num, 1
+
+def factors():
+    """Factorize as many numbers as possible into a product
+    of two smaller numbers.
+    """
+
+    if len(sys.argv) != 2:
+        raise Exception("Usage: factors <file>")
+
+    try:
+        with open(sys.argv[1], "r", encoding=("utf8")) as text:
+            lines = text.readlines()
+    except IOError:
+        raise Exception("Error: Unable to open {:s}".format(sys.argv[1]))
+
+    for line in lines:
+        line = line.strip()
+        if line:
+            number = int(line)
+            p, q = factorize(number)
+            if q == 1:
+                print(f"{number}={number}")
+            else:
+                print(f"{number}={p}*{q}")
+
+if __name__ == "__main__":
+    factors()
