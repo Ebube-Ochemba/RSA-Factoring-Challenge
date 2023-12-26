@@ -14,7 +14,7 @@ I learnt about RSA, how HTTPS provide security, Prime Factorization and the sign
 
 > Each file contains the solution to a task in the project.
 
-- [factors](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors): An executable that factorize as many numbers as possible into a product of two smaller numbers.
+- [factors](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors): A Python script that factorize as many numbers as possible into a product of two smaller numbers.
 > Usage:
 ```sh
 $ factors <file>
@@ -29,8 +29,7 @@ $ factors <file>
 
 - [rsa](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/rsa):
 
-> - [factors.py](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors.py): The source code for [factors](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors).
-> - [factors.c](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors.c): Trial C Source code for `factors` (_incomplete_). To test test it:
+> - [factors.c](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors.c): Trial C Source code for `factors` (_incomplete_). To test it:
 ```sh
 $ gcc -Wall -Wextra -Werror -pedantic  -std=gnu99 factors.c -o factors -lm
 ```
