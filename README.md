@@ -29,5 +29,9 @@ $ factors <file>
 
 - [rsa](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/rsa):
 
-> - [factors.c](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors.c): The source code for [factors](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors).
+> - [factors.py](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors.py): The source code for [factors](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors).
+> - [factors.c](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/factors.c): Trial C Source code for `factors` (_incomplete_). To test test it:
+```sh
+$ gcc -Wall -Wextra -Werror -pedantic  -std=gnu99 factors.c -o factors -lm
+```
 > - [tests](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/tests): A folder of test files. Provided by Alx.
