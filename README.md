@@ -28,7 +28,7 @@ $ factors <file>
 
 > - `p` and `q` (_might not be prime numbers, but are factors of_ `n`)
 
-- [ ] [rsa](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/rsa): The same as `factors`, but `p` and `q` are always prime numbers.
+- [ ] [rsa](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/rsa): A similar script like `factors`, but `p` and `q` are always prime numbers.
 
 > - [ ] [Cfactors.c](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/Cfactors.c): A C Source code for `factors` (_incomplete_). To test it:
 ```sh
