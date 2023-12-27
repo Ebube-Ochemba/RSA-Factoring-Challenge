@@ -32,6 +32,7 @@ $ ...
 $ rsa <file>
 $ n=p*q
 ```
+- `(<file> contains only one number)`
 
 > - [ ] [Cfactors.c](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/Cfactors.c): A C Source code for `factors` (_incomplete_). To test it:
 ```sh
