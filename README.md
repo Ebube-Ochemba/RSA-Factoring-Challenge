@@ -38,5 +38,7 @@ $ ...
 ```sh
 $ gcc -Wall -Wextra -Werror -pedantic  -std=gnu99 Cfactors.c -o Cfactors -lm
 $ Cfactors <file>
+$ n=p*q
+$ ...
 ```
 > - [tests](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/tests): A folder of test files. Provided by Alx.
