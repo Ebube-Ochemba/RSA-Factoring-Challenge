@@ -31,7 +31,6 @@ $ ...
 ```sh
 $ rsa <file>
 $ n=p*q
-$ ...
 ```
 
 > - [ ] [Cfactors.c](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/Cfactors.c): A C Source code for `factors` (_incomplete_). To test it:
