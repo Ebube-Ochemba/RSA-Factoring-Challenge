@@ -9,6 +9,7 @@ I learnt about RSA, how HTTPS provide security, Prime Factorization and the sign
 ## Requirements
 
 - OS: Ubuntu 20.04 LTS
+- Time limit: Program must not run for more than 5 seconds.
 
 ## Files
 
@@ -27,7 +28,7 @@ $ factors <file>
 
 > - `p` and `q` (_might not be prime numbers, but are factors of_ `n`)
 
-- [ ] [rsa](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/rsa):
+- [ ] [rsa](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/rsa): The same as `factors`, but `p` and `q` are always prime numbers.
 
 > - [ ] [Cfactors.c](https://github.com/Ebube-Ochemba/RSA-Factoring-Challenge/blob/master/Cfactors.c): A C Source code for `factors` (_incomplete_). To test it:
 ```sh
